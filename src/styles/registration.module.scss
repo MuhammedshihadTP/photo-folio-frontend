@@ -1,0 +1,50 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .paper {
+      height: 480px;
+      width: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+  
+      form {
+        width: 450px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+  
+        h3 {
+          font-weight: 500;
+          font-size: larger;
+        }
+        .Link{
+          font-weight: 100;
+          
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      .paper {
+        height: 80%;
+        width: 80%;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .paper {
+        height: 90%;
+        width: 90%;
+      }
+      form {
+        height: 90%;
+      }
+    }
+  }
